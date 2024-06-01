@@ -7819,8 +7819,9 @@ MonoBehaviour:
   controller: {fileID: 2871854915999293077}
   laserOrigin: {fileID: 2871854915999293072}
   gunRange: 5
-  fireRate: 0.002
+  fireSpread: 0.7
   laserDuration: 0.05
+  laserCount: 5
   LazerPoint: {fileID: 4629709935096698964, guid: 5a39363fc2eda0e4ab8ec369ca5dc38e, type: 3}
 --- !u!120 &420675948
 LineRenderer:
@@ -29309,7 +29310,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -40898,7 +40899,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2871854917786082929
 Transform:
   m_ObjectHideFlags: 0
@@ -43443,7 +43444,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4704240697808797663, guid: 048249d9a15aa3c459399751e860bde7, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 89.4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4704240697808797663, guid: 048249d9a15aa3c459399751e860bde7, type: 3}
       propertyPath: m_SizeDelta.y
@@ -44861,7 +44862,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!210 &7742681864956335625
 SortingGroup:
   m_ObjectHideFlags: 0
@@ -45503,7 +45504,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &9159519854914339658
 MonoBehaviour:
   m_ObjectHideFlags: 0
