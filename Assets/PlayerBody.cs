@@ -1,22 +1,21 @@
-using UnityEngine;
+using System;
+using System.Collections.Generic;
 
+using UnityEngine;
+using UnityEngine.XR;
+using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
 
 public class PlayerBody : MonoBehaviour
 {
 	[SerializeField] private Transform player_head, player_feet;
+	[SerializeField] private DynamicMoveProvider move_provider;
 
-	private void Awake()
-	{
-
-	}
-	private void Start()
-	{
-		
-	}
 	private void Update()
 	{
-		Vector3 feet_position = new Vector3(player_head.localPosition.x, player_feet.localPosition.y, player_head.localPosition.z);
-		if (Vector3.Distance(gameObject.transform.position, feet_position)>5)
-			gameObject.transform.position = feet_position;
+		if (new Vector3(player_head.localPosition.x, 0, player_head.localPosition.z).magnitude>0.1)
+		{
+			move_provider.MoveRigCustom(new Vector3(0, 0.001f, 0));
+			player_head.localPosition = Vector3.zero;
+		}
 	}
 }
