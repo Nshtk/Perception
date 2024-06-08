@@ -14,7 +14,6 @@ public class RaycastGun : MonoBehaviour
 	[SerializeField] private float _laser_range = 5f;
 	[SerializeField] private float _laser_spread = 0.5f;
 	[SerializeField] private float _laser_line_lifetime = 0.01f;
-	[SerializeField] private uint _laser_lines_count = 1;
 	[SerializeField] private uint _laser_lines_count_alternative_mode = 20;
 	[SerializeField] private float _laser_scan_radius_alternative_mode_horizontal = 1f, _laser_scan_radius_alternative_mode_vertical = 1f;
 	[SerializeField] private LineRenderer _line_renderer_prefab;

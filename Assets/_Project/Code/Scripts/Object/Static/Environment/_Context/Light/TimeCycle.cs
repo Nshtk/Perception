@@ -1,4 +1,4 @@
-using System;
+/*using System;
 
 using UnityEngine;
 using UnityEngine.Rendering.HighDefinition;
@@ -28,8 +28,8 @@ namespace Environment
 			[SerializeField] private AnimationCurve _moon_intensity_curve;
 			[SerializeField] private AnimationCurve _moon_color_temperature_curve;
 
-			/*private HDAdditionalLightData _sun_additional_data;
-			private HDAdditionalLightData _moon_additional_data;*/
+			*//*private HDAdditionalLightData _sun_additional_data;
+			private HDAdditionalLightData _moon_additional_data;*//*
 
 			public float Time_Current
 			{
@@ -49,8 +49,8 @@ namespace Environment
 			internal void initialise(Environment environment)
 			{
 				_environment = environment;
-				/*_sun_additional_data = _environment._sun_prefab.GetComponent<HDAdditionalLightData>();
-				_moon_additional_data = _environment._moon_prefab.GetComponent<HDAdditionalLightData>();*/
+				*//*_sun_additional_data = _environment._sun_prefab.GetComponent<HDAdditionalLightData>();
+				_moon_additional_data = _environment._moon_prefab.GetComponent<HDAdditionalLightData>();*//*
 			}
 
 			internal void update()
@@ -63,7 +63,7 @@ namespace Environment
 			}
 			private void updateLights()
 			{
-				/*if (_time_current > 6f && _time_current < 10f)
+				*//*if (_time_current > 6f && _time_current < 10f)
 					_sun_additional_data.EnableShadows(true);
 				else
 					_sun_additional_data.EnableShadows(false);
@@ -78,8 +78,9 @@ namespace Environment
 										
 				/*_environment._moon_prefab.transform.rotation = Quaternion.Euler(Mathf.Lerp(90, 450, _time_normalised), _environment._moon_prefab.transform.rotation.y, _environment._moon_prefab.transform.rotation.z);
 				_environment._moon_prefab.intensity = _moon_intensity_curve.Evaluate(_time_normalised);
-				_environment._moon_prefab.colorTemperature = _moon_color_temperature_curve.Evaluate(_time_normalised) * 10000f;*/
+				_environment._moon_prefab.colorTemperature = _moon_color_temperature_curve.Evaluate(_time_normalised) * 10000f;*//*
 			}
 		}
 	}
 }
+*/

@@ -1,4 +1,4 @@
-using UnityEditor;
+/*using UnityEditor;
 using UnityEngine;
 using System.IO;
 using System.Text;
@@ -116,4 +116,4 @@ public class FileExtensionGUI
 
         return default(EditorWindow);
     }
-}
+}*/
